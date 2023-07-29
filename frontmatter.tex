@@ -1,0 +1,73 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This file contains the content for the frontmatter.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Declaration
+%% Do not change this declaration section. However, read, check and accept its content
+
+\begin{declaration}{
+    This project report is submitted in partial fulfilment of the requirements for the degree of \degreetext.
+    I declare that this thesis was composed by myself, that the work contained therein is my own, except where explicitly stated otherwise in the text, and that it has not been submitted, in whole or in part, for any other degree or professional qualification.
+}\end{declaration}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Abstract
+
+\begin{abstract}
+    The abstract of the thesis (about 300 words long).
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Dedication
+
+\begin{dedication}
+    Your dedication. Try to keep it within one page.
+\end{dedication}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Tables of Content, Figures and Tables
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Glossaries
+%% Do not alter the content below (the content for those is defined in definitions.tex
+
+\chapter*{Abbreviations}
+\addcontentsline{toc}{chapter}{Abbrevations}
+% Acronyms on its first use see after ToCs
+\glsunsetall % Disable all
+% Show all regardless if they are used or not (if that is what you want).
+\glsaddall
+\glsaddallunused
+\setglossarysection{section}
+\printglossary[type=\acronymtype,title={}]
+\paragraph{Note:} Author abbreviations are shown in their corresponding reference entry.
+
+\setlength{\glsdescwidth}{0.5\textwidth}
+\setlength{\glspagelistwidth}{0.1\textwidth}
+\cleardoublepage
+
+\chapter*{Nomenclature}
+\addcontentsline{toc}{chapter}{Nomenclature}
+\setglossarysection{section}
+\glossarystyle{aiaostyle}
+\printglossary[type=main,title={}]
+\vspace{1cm}
+\glossarystyle{nounits}
+% \paragraph{Note:} Other terms are introduced as they are presented in the studies.
+
+% Enable entries again
+\glsresetall
+
+\cleardoublepage
